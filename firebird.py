@@ -1,7 +1,7 @@
 import fdb
 import os
 
-con = fdb.connect(host="localhost",database="C:/SIC/ARQ01/ARQSIST.FDB", user="sysdba", password="masterkey")
+con = fdb.connect(host="localhost",database="C:/SIC/ARQ01/ARQSIST.FDB", user="-", password="-")
 
 cur = con.cursor()
 codigoClientesSemCarteira = cur.execute("select codic from arqcad where restricao_cobr = 'NNSS'")
